@@ -100,9 +100,8 @@ class Roode : public PollingComponent {
   void recalibration();
   Zone *entry = new Zone(0);
   Zone *exit = new Zone(1);
-  void resetCounter() {
-        // Logic to reset the counter
-  }
+  void resetCounter();
+
  protected:
   TofSensor *distanceSensor;
   Zone *current_zone = entry;
