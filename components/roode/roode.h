@@ -49,8 +49,8 @@ Valid values: [15,20,33,50,100,200,500]
 static int time_budget_in_ms_short = 15;  // max range: 1.3m
 static int time_budget_in_ms_medium = 33;
 static int time_budget_in_ms_medium_long = 50;
-static int time_budget_in_ms_long = 100;
-static int time_budget_in_ms_max = 200;  // max range: 4m
+static int time_budget_in_ms_long = 50; // Default was 100
+static int time_budget_in_ms_max = 100;  // Default was 200, max range: 4m
 
 class Roode : public PollingComponent {
  public:
